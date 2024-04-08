@@ -1,11 +1,12 @@
 # Module 20 Report Template
 # Overview of the Project
 
-The purpose of this analysis is to develop a machine learning model that can predict the credit worthiness of borrowers based on historical data. The data set contains information about the loans such as loan size, interest rate, borrower income, debt to income ratio, number of accounts, total debt,loan status and derogatory marks.
+The purpose of this analysis is to develop a machine learning model that can predict the credit worthiness of borrowers based on the lending data. The data set contains information about the loans such as loan size, interest rate, borrower income, debt to income ratio, number of accounts, total debt,loan status and derogatory marks.
 
 The objective is to train and evaluate the logistic regression model to classify loans into two categories i.e. healthy loans(0) or high-risk loans(1). This will help the business to make better decisions on who is eligible for the loans to avoid risk of defaulting on the loans.
 
-The goal is to develop a reliable model to improve risk management and enhance the issuance of loan process to its customers and at the swame time minimize false positives and false negatives
+The goal is to develop a reliable model to improve risk management and enhance the issuance of loan process to its customers and at the same time minimize false positives and false negatives
+
 ## Analysis 
 Below are the steps taken to perform the analysis:  
 - The analysis starts with identify the target variables and the features based on the structure of the data
@@ -29,9 +30,10 @@ Below are the steps taken to perform the analysis:
 
 **Precision:** 87% (0.87) - Among the loans predicted as high-risk, 87% were actually high-risk.  
 **Recall:** 89% (0.89) - The model correctly identified 89% of the actual high-risk loans.  
-**F1-score:** 88% (0.88) - The F1-score, which balances precision and recall, is also high.  
+**F1-score:** 88% (0.88) - The F1-score, which balances precision and recall, is also high considering the uneven data sets of healthy and high risk loans.  
 **Support:** 625 - This is the number of actual occurrences of high-risk loans in the test dataset.  
-**Accuracy:** 99% - This is the overall accuracy of the model, indicating that 99% of the predictions were correct, which is also supported by the training and testing data sets values(Training Data score: 0.9914878250103177, Testing Data score: 0.9924164259182832)
+**Accuracy:** 99% - This is the overall accuracy of the model, indicating that 99% of the predictions were correct, which is also supported by the training and testing data sets values(Training Data score: 0.9914878250103177, Testing Data score: 0.9924164259182832)  
+**Weighted Average:** 99% The weighted average of the performance of the model was 99% accuracy even considering the disparity of data sets of healthy and high-risk loans  
 
 ## Summary
 
